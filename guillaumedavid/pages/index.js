@@ -6,6 +6,7 @@ import Article from '../components/Article'
 import Skills from '../components/Skills'
 import Why from '../components/Why'
 import Form from '../components/Form'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Skills />
       <Why />
       <Form />
+      <Footer />
 
 
 
