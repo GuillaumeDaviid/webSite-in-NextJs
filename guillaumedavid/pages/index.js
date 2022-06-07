@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import About from '../components/About'
 import Portfolio from '../components/Portfolio'
+import Article from '../components/Article'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <About />
       <Portfolio />
+      <Article />
 
 
 
