@@ -3,7 +3,7 @@ export default function Header() {
         <section id="home">
         <div className="Header">
 
-        <nav className="Header_nav">
+        <nav className="Header_nav visible">
                 <ul>
                 <li><a href="#home"><span>Accueil</span></a></li>
                 <li><a href="#portfolio"><span>Portfolio</span></a></li>

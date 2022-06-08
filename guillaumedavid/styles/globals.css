@@ -27,6 +27,11 @@ ul{
   list-style:none;
 }
 
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
 * {
   box-sizing: border-box;
 }
