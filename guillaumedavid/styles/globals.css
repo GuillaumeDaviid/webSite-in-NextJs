@@ -13,6 +13,20 @@ a {
   text-decoration: none;
 }
 
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
 * {
   box-sizing: border-box;
 }
