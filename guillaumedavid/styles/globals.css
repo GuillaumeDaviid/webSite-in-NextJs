@@ -32,6 +32,13 @@ li {
   text-align: -webkit-match-parent;
 }
 
+h2 {
+  font-family: 'big_johnregular';
+  font-size: 1.625rem;
+  color: #222222;
+  font-weight: 300;
+}
+
 * {
   box-sizing: border-box;
 }
