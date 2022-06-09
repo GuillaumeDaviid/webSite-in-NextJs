@@ -1,18 +1,27 @@
+import { useState } from "react"
+
 export default function Header() {
+    const [visible, setVisible] = useState(false);
+
+    function handleClick() {
+        setVisible(!visible)
+    }
+
+
     return(
         <section id="home">
         <div className="Header">
 
-        <nav className="Header_nav visible">
+        <nav className={`Header_nav ${visible ? `visible` : `notVisible`}`}>
                 <ul>
-                <li><a href="#home"><span>Accueil</span></a></li>
-                <li><a href="#portfolio"><span>Portfolio</span></a></li>
-                <li><a href="#contact"><span>Contact</span></a></li>
+                <li><a href="#home" onClick={handleClick}><span>Accueil</span></a></li>
+                <li><a href="#portfolio" onClick={handleClick}><span>Portfolio</span></a></li>
+                <li><a href="#contact" onClick={handleClick}><span>Contact</span></a></li>
                 </ul>
-                <a href="#" className="cd-close-menu">Close<span></span></a>
+                <a href="#" className="cd-close-menu" onClick={handleClick}>Close<span></span></a>
             </nav>
 
-            <a className="cd-menu-trigger" href="#main-nav"><span></span></a>
+            <a className="cd-menu-trigger" href="#main-nav" onClick={handleClick}><span></span></a>
 
             <h1 className="Header_title">GUILLAUME DAVID</h1>
 
