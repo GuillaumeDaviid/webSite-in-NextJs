@@ -1,8 +1,9 @@
 .Article {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: center;*/
+    text-align: center;
+    //flex-direction: column;
 
     &_separator {
         height: 2px;
@@ -12,7 +13,8 @@
     }
 
     &_items {
-        height: 300px;
+        position: relative;
+        overflow: hidden;
 
         &-btn {
             z-index: 99;
@@ -27,32 +29,31 @@
 
         &-elt {
             display: flex;
-
+            
             &-item {
-                
+                min-width: 25vw;
             }
         }
     }
 }
 
 .right {
-    content: '<';
     left: 0vw;
 }
 
 .left {
-    content: '>';
     right: 0vw;
 }
 
 .item {
-    &_img {
-        margin-bottom: 10px;
-        max-width: 200px;
-        max-height: 100px;
-    }
-
     &_link {
         color: #222222;
     }
+}
+
+.wrapper_img img{
+    margin-bottom: 10px;
+    /*
+    max-width: 200px;
+    max-height: 100px;*/
 }
