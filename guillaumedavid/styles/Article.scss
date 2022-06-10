@@ -1,9 +1,5 @@
 .Article {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     text-align: center;
-    //flex-direction: column;
 
     &_separator {
         height: 2px;
@@ -13,7 +9,7 @@
     }
 
     &_items {
-        position: relative;
+        
         overflow: hidden;
 
         &-btn {
@@ -28,6 +24,8 @@
         }
 
         &-elt {
+            position: relative;
+            margin-top: 50px;
             display: flex;
             
             &-item {
@@ -46,14 +44,20 @@
 }
 
 .item {
+    &_img {
+        max-width: 200px !important;
+        max-height: 100px !important;
+    }
     &_link {
         color: #222222;
     }
 }
-
+/*
 .wrapper_img img{
+    
     margin-bottom: 10px;
-    /*
-    max-width: 200px;
-    max-height: 100px;*/
+    min-width: none;
+    max-width: 200px !important;
+    max-height: 100px !important;
 }
+*/

@@ -19,8 +19,8 @@ export default function Article({posts}) {
                 {posts.items.map((data, index) => 
                   <div key={index} className="Article_items-elt-item">
                     
-                    {<div className='wrapper_img'>  
-                    <Image className='item_img' src={data.thumbnail} alt={data.categories[1]} width="200px" height="100px" loader={loaderProp}/>
+                    {<div className='wrapper_img' >  
+                    <Image className='item_img' src={data.thumbnail} alt={data.categories[1]} width="80%" height="30%" layout="responsive" objectFit="contain" loader={loaderProp}/>
                 </div> }
 
                 
