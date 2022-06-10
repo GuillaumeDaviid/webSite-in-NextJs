@@ -8,7 +8,7 @@ import Why from '../components/Why'
 import Form from '../components/Form'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function Home({post}) {
   return (
     <div className="Home">
       <Head>
@@ -20,7 +20,7 @@ export default function Home() {
       <Header />
       <About />
       <Portfolio />
-      <Article />
+      <Article posts={post}/>
       <Skills />
       <Why />
       <Form />
@@ -30,4 +30,14 @@ export default function Home() {
 
     </div>
   )
+}
+
+
+export async function getStaticProps ({params}) {
+    const post = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@guillaumedaavid`).then(r => r.json())
+    return {
+      props: {
+        post
+      }
+    }
 }
