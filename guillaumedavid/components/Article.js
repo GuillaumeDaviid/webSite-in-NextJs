@@ -41,8 +41,8 @@ function handleClickPrevious() {
             <h2>Article</h2>
             <div className="Article_separator"></div>
             <div className="Article_items">
-                <button className="Article_items-btn right" onClick={handleClickPrevious}></button>
-                <button className="Article_items-btn left" onClick={handleClickNext}></button>
+                <button className="Article_items-btn right" onClick={handleClickPrevious}>&#60;</button>
+                <button className="Article_items-btn left" onClick={handleClickNext}>&#62;</button>
 
                 <div className='Article_items-elt' id="carrousel">
 
