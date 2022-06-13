@@ -1,11 +1,16 @@
 export default function Form() {
     return(
-        <div>
-            <h2>DEMANDEZ UN DEVIS</h2>
-            <p>Envie d&apos;un nouveau site web ? Ou alors d&apos;une refonte de celui-ci ? 
-            Vous cherchez un développeur qui répond à vos besoins sur-mesure et qui respect les délais et le budget ? Demandez un Devis !</p>
+        <div className="Form">
 
-            <div>
+            <div className="Form_text">
+            <h2>DEMANDEZ UN DEVIS</h2>
+            <div className="Form_text-separator"></div>
+            <p className="Form_text-content">Envie d&apos;un nouveau site web ? Ou alors d&apos;une refonte de celui-ci ? 
+            Vous cherchez un développeur qui répond à vos besoins sur-mesure et qui respect les délais et le budget ? Demandez un Devis !</p>
+            </div>
+
+            <div className="Form_content">
+            <div className="Form_content-info">
                 <h4>COORDONNEES</h4>
                 <p>Loos-en-Gohelle (62) - France</p>
                 <p>guillaumedaavidpro@gmail.com</p>
@@ -16,24 +21,30 @@ export default function Form() {
                 <a>linkedin</a>
             </div>
 
-            <div>
+            <div className="Form_content-form">
                 <form>
-                    <div>
-                        <input type="text" name="user_name" placeholder="Nom"/>
+                    <div className="row_form">
+
+                    <div >
+                        <input className="row_form-name" type="text" name="user_name" placeholder="Nom"/>
+                    </div>
+
+                    <div >
+                        <input className="row_form-mail" type="email" name="user_mail" placeholder="Email"/>
+                    </div>
+
                     </div>
 
                     <div>
-                        <input type="email" name="user_mail" placeholder="Email"/>
+                        <textarea className="row_form-msg" name="user_message" placeholder="Message"/>
                     </div>
 
-                    <div>
-                        <textarea name="user_message" placeholder="Message"/>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="ENVOYER" />
+                    <div className="container-btn">
+                        <input className="btn-form" type="submit" value="ENVOYER" />
                     </div>
                 </form>
+            </div>
+
             </div>
         </div>
     )
