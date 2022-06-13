@@ -1,3 +1,46 @@
+.Skill {
+    background: #f4f4f4;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &_separator {
+        height: 2px;
+        width: 85px;
+        margin: 70px auto;
+        background-color: #222222;
+    }
+
+    &_skills {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        column-gap: 200px;
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 280px;
+    height: 100px;
+    border: 2px solid black;
+    margin-top: 10px;
+    transition: color .55s ease-in-out;
+    transition: background-color .55s ease-in-out;
+
+    &:hover {
+        background-color: #d87843;
+        color: #fff;
+        opacity: 0.9;
+    }
+}
+
+
 .project {
     margin-top: 20px;
     width: 100%;
