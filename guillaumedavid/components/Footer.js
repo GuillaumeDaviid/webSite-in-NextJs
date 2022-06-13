@@ -3,7 +3,7 @@ export default function Footer() {
         <div className="Footer">
             <p>Vivre, apprendre et monter de niveau chaque jours</p>
 
-            <p>2022. All Rights Reserved</p>
+            <p className="Footer_copyright">2022. All Rights Reserved</p>
         </div>
     )
 }
