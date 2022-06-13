@@ -36,6 +36,10 @@ export default function Why() {
                     <p className="items-text">Vous avez un gros projet à venir ? React.js est utilisé par Facebook, Instagram, Twitter, Netflix ...</p>
                 </div>
             </div>
+
+            <div className="quote">
+                <div className="quote_background"></div>
+                </div>
         </div>
     )
 }
