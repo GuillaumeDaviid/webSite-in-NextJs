@@ -7,6 +7,7 @@ import '../styles/Article.scss'
 import '../styles/Skills.scss'
 import '../styles/Why.scss'
 import '../styles/Form.scss'
+import '../styles/Footer.scss'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
