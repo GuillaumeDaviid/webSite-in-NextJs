@@ -5,6 +5,7 @@ import '../styles/About.scss'
 import '../styles/Portfolio.scss'
 import '../styles/Article.scss'
 import '../styles/Skills.scss'
+import '../styles/Why.scss'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
