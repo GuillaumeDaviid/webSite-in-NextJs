@@ -4,6 +4,7 @@ import '../styles/stylesheets.scss'
 import '../styles/About.scss'
 import '../styles/Portfolio.scss'
 import '../styles/Article.scss'
+import '../styles/Skills.scss'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
