@@ -132,12 +132,12 @@
     }
 }
 
-.notVisible {
-    display: none;
+.nav_notVisible {
+  transform: translateY(-100%);
 }
 
-.visible {
-    display: block;
+.nav_visible {
+    transform: translateY(0);
 }
 
 a,
