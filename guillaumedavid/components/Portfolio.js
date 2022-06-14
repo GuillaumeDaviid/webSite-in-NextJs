@@ -6,6 +6,7 @@ import checkers from '../images/checkers.png'
 import academie from '../images/01academie.png'
 import home from '../images/01home.png'
 import course from '../images/01courses.png'
+import Fade from 'react-reveal/Fade';
 
 export default function Portfolio() {
     const [selected, setSelected] = useState('all');
@@ -17,9 +18,11 @@ export default function Portfolio() {
     return(
         <section id="portfolio">
         <div className="Portfolio">
+            <Fade bottom>
             <h2 className="Protfolio_title">MON PORTFOLIO</h2>
 
             <div className="Portfolio_separator"></div>
+            </Fade>
 
             <ul className="Portfolio_btn">
                 <li className={`${selected === "all" ? `selected` : `notSelected`}`} onClick={() => handleClick("all")}>All</li>
@@ -28,7 +31,7 @@ export default function Portfolio() {
                 <li className={`${selected === "mobile" ? `selected` : `notSelected`}`} onClick={() => handleClick("mobile")}>Mobile</li>
             </ul>
             <div className="Portfolio_items">
-
+                <Fade top>
                 <div className={`Portfolio_items-elt ${selected === "all" || selected === "front" ? `visible` : `notVisible`}`}>
                     <Image src={netflix} alt="Front End" className="Portfolio_items-img"/>
                     <div className="Portfolio_items-content">
@@ -78,6 +81,7 @@ export default function Portfolio() {
                         </Link>
                     </div>
                 </div>
+                </Fade>
 
             </div>
         </div>

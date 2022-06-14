@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Fade from 'react-reveal/Fade';
 
 export default function Skill() {
     return(
@@ -14,8 +15,10 @@ export default function Skill() {
 
 
             <div className='Skill'>
+                <Fade bottom>
             <h2>COMPETENCES</h2>
             <div className='Skill_separator'></div>
+            </Fade>
 
             <div className='Skill_skills'>
                 <div className='skills'>HTML/CSS</div>

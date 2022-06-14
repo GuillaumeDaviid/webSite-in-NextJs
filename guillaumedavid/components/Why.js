@@ -2,14 +2,17 @@ import Image from "next/image"
 import smartPhone from "../images/app.png"
 import tablette from "../images/app2.png"
 import computer from "../images/makbook.png"
+import Fade from 'react-reveal/Fade';
 
 export default function Why() {
     return(
         <div className="Why">
+            <Fade bottom>
             <h2>POURQUOI MOI ?</h2>
             <div className="Why_separator"></div>
             <p className="Why_head">Envie d&apos;un nouveau site web ? Ou alors d&apos;une refonte de celui-ci ? 
             Vous cherchez un développeur qui répond à vos besoins sur-mesure et qui respect les délais et le budget ?</p>
+            </Fade>
 
             <div className="Why_items">
                 <div className="Why_items-elt">
