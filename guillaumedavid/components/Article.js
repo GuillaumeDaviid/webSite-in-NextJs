@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from 'react'
+import Fade from 'react-reveal/Fade';
 
 export default function Article({posts}) {
   const [p, setp] = useState(0);
@@ -38,8 +39,10 @@ function handleClickPrevious() {
 }
     return(
         <div className="Article">
+            <Fade bottom>
             <h2>Article</h2>
             <div className="Article_separator"></div>
+            
             <div className="Article_items">
                 <button className="Article_items-btn right" onClick={handleClickPrevious}>&#60;</button>
                 <button className="Article_items-btn left" onClick={handleClickNext}>&#62;</button>
@@ -64,6 +67,7 @@ function handleClickPrevious() {
                 </div>
                 
             </div>
+            </Fade>
         </div>
     )
 }

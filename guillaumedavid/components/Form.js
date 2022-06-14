@@ -1,16 +1,22 @@
+import Fade from 'react-reveal/Fade';
+
 export default function Form() {
     return(
         <div className="Form">
             <section id="contact">
             <div className="Form_text">
+                <Fade bottom>
             <h2>DEMANDEZ UN DEVIS</h2>
             <div className="Form_text-separator"></div>
             <p className="Form_text-content">Envie d&apos;un nouveau site web ? Ou alors d&apos;une refonte de celui-ci ? 
             Vous cherchez un développeur qui répond à vos besoins sur-mesure et qui respect les délais et le budget ? Demandez un Devis !</p>
+            </Fade>
             </div>
 
             <div className="Form_content">
+                
             <div className="Form_content-info">
+            <Fade bottom>
                 <h4>COORDONNEES</h4>
                 <p>Loos-en-Gohelle (62) - France</p>
                 <p>guillaumedaavidpro@gmail.com</p>
@@ -19,7 +25,9 @@ export default function Form() {
                 <a>github</a>
                 <a>medium</a>
                 <a>linkedin</a>
+                </Fade>
             </div>
+            
 
             <div className="Form_content-form">
                 <form>

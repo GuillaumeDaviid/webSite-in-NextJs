@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Fade from 'react-reveal/Fade';
 
 export default function Header() {
     const [visible, setVisible] = useState(false);
@@ -22,12 +23,13 @@ export default function Header() {
             </nav>
 
             <a className="cd-menu-trigger" href="#main-nav" onClick={handleClick}><span></span></a>
-
+            <Fade bottom>
             <h1 className="Header_title">GUILLAUME DAVID</h1>
 
             <div className="Header_separator-white"></div>
 
             <h3 className="Header_description">Développeur Front End / Javascript / React</h3>
+            </Fade>
 
             <a className="mouse-scroll" href="#introduction">
 						<span className="mouse">
