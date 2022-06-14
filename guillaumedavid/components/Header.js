@@ -12,7 +12,7 @@ export default function Header() {
         <section id="home">
         <div className="Header">
 
-        <nav className={`Header_nav ${visible ? `visible` : `notVisible`}`}>
+        <nav className={`Header_nav ${visible ? `nav_visible` : `nav_notVisible`}`}>
                 <ul>
                 <li><a href="#home" onClick={handleClick}><span>Accueil</span></a></li>
                 <li><a href="#portfolio" onClick={handleClick}><span>Portfolio</span></a></li>

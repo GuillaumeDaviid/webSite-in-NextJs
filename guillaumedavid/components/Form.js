@@ -1,7 +1,7 @@
 export default function Form() {
     return(
         <div className="Form">
-
+            <section id="contact">
             <div className="Form_text">
             <h2>DEMANDEZ UN DEVIS</h2>
             <div className="Form_text-separator"></div>
@@ -46,6 +46,7 @@ export default function Form() {
             </div>
 
             </div>
+            </section>
         </div>
     )
 }

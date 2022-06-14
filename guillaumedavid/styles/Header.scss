@@ -106,7 +106,8 @@
     }
 
     &_title {
-        font-size: 3.5rem;
+        padding-top: 160px;
+        font-size: 3rem;
         color: #fff;
         font-weight: 300;
         line-height: 4rem;
@@ -131,12 +132,12 @@
     }
 }
 
-.notVisible {
-    display: none;
+.nav_notVisible {
+  transform: translateY(-100%);
 }
 
-.visible {
-    display: block;
+.nav_visible {
+    transform: translateY(0);
 }
 
 a,
