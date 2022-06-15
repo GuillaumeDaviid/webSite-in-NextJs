@@ -53,7 +53,7 @@ function handleClickPrevious() {
                   <div key={index} className="Article_items-elt-item">
                     
                     {<div className='wrapper_img' >  
-                    <Image className='item_img' src={data.thumbnail} alt={data.categories[1]} width="80%" height="30%" layout="responsive" objectFit="contain" loader={loaderProp}/>
+                    <Image className='item_img' src={data.thumbnail} alt={data.categories[1]} width="80%" height="30%" layout="responsive" objectFit="contain" unoptimized="false" loader={loaderProp}/>
                 </div> }
 
                 
