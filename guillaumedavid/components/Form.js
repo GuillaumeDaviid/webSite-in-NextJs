@@ -30,7 +30,7 @@ export default function Form() {
             
 
             <div className="Form_content-form">
-                <form>
+                <form id="formid" method="post" action='../php/recaptcha.php'>
                     <div className="row_form">
 
                     <div >
